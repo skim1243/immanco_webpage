@@ -19,11 +19,10 @@ export default function Home() {
             Immanco Commercial Cleaning
           </h1>
           <h2 className="text-3xl md:text-3xl font-bold mb-6 text-black leading-tight">
-            Commited to exceptional service
-
+            Committed to exceptional service
           </h2>
           <p className="text-xl md:text-2xl mb-8 max-w-xl text-[#6E675F]">
-            Discover the difference with Immanco Cleaning and said experience the highest stands of cleanliness and hygiene. 
+            Discover the difference with Immanco Cleaning and experience the highest standards of cleanliness and hygiene. 
           </p>
           
           <a href="tel:+14436081634" className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-colors text-lg mb-8 shadow-lg inline-block">

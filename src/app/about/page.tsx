@@ -8,7 +8,7 @@ export default function About() {
         <section className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-6">About Sparkle & Shine</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're a family-owned cleaning company dedicated to providing exceptional cleaning services
+            We&apos;re a family-owned cleaning company dedicated to providing exceptional cleaning services
             with a personal touch. Our commitment to quality and customer satisfaction has made us
             the trusted choice for homes and businesses in our community.
           </p>
@@ -21,7 +21,7 @@ export default function About() {
               <h2 className="text-3xl font-bold mb-6 text-blue-600">Our Story</h2>
               <p className="text-gray-600 mb-4">
                 Founded in 2010, Sparkle & Shine began with a simple mission: to provide reliable,
-                high-quality cleaning services that make a difference in people's lives. What started
+                high-quality cleaning services that make a difference in people&apos;s lives. What started
                 as a small team of dedicated cleaners has grown into a full-service cleaning company
                 serving hundreds of satisfied customers.
               </p>
@@ -62,7 +62,7 @@ export default function About() {
               <div className="text-4xl mb-4">🌱</div>
               <h3 className="text-xl font-bold mb-4">Sustainability</h3>
               <p className="text-gray-600">
-                We're committed to environmental responsibility, using eco-friendly products and
+                We&apos;re committed to environmental responsibility, using eco-friendly products and
                 sustainable practices.
               </p>
             </div>
