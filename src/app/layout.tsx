@@ -1,9 +1,10 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import Link from 'next/link'
+import { Lora } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const lora = Lora({ subsets: ['latin'], variable: '--font-lora' })
 
 export const metadata: Metadata = {
   title: 'Immanco Cleaning Services',
@@ -16,13 +17,28 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={lora.variable}>
+      <body className={lora.className}>
         <header className="bg-[#423E37] text-white">
           <nav className="container mx-auto px-4 py-4">
-            <div className="flex justify-between items-center">
-              <h1 className="text-2xl font-bold">Immanco</h1>
-              
+            <div className="flex justify-between items-center gap-6">
+              <Link href="/" className="text-2xl font-bold hover:opacity-90">
+                Immanco
+              </Link>
+              <div className="flex flex-wrap items-center gap-4 md:gap-6">
+                <Link href="/#innovation" className="text-sm md:text-base hover:underline">
+                  Innovation
+                </Link>
+                <Link href="/#services" className="text-sm md:text-base hover:underline">
+                  Our Services
+                </Link>
+                <Link href="/#why-choose-us" className="text-sm md:text-base hover:underline">
+                  Why Choose Us
+                </Link>
+                <Link href="/#contact" className="text-sm md:text-base hover:underline">
+                  Contact
+                </Link>
+              </div>
             </div>
           </nav>
         </header>
