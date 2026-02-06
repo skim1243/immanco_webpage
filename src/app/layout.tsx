@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={lora.variable}>
-      <body className={lora.className}>
+    <html lang="en" className={lora.variable} suppressHydrationWarning>
+      <body className={lora.className} suppressHydrationWarning>
         <header className="bg-[#423E37] text-white">
           <nav className="container mx-auto px-4 py-4">
             <div className="flex justify-between items-center gap-6">
