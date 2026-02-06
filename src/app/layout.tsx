@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Lora } from 'next/font/google'
 import './globals.css'
 
@@ -22,8 +23,8 @@ export default function RootLayout({
         <header className="bg-[#423E37] text-white">
           <nav className="container mx-auto px-4 py-4">
             <div className="flex justify-between items-center gap-6">
-              <Link href="/" className="text-2xl font-bold hover:opacity-90">
-                Immanco
+              <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
+                <Image src="/logo.png" alt="Immanco Cleaning Services" width={180} height={56} className="h-10 w-auto md:h-12" priority />
               </Link>
               <div className="flex flex-wrap items-center gap-4 md:gap-6">
                 <Link href="/#innovation" className="text-sm md:text-base hover:underline">

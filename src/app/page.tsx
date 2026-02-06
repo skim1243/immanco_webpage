@@ -7,6 +7,9 @@ import { FadeInOnScroll } from '@/components/FadeInOnScroll'
 const UNUSED_HERO_IMAGES = [
   '/hero3.png', '/hero6.png', '/hero7.png', '/hero9.png',
   '/hero10.png', '/hero11.png', '/hero12.png', '/hero14.png', '/hero15.png',
+  '/new_pics_02052026/IMG_3704.jpeg', '/new_pics_02052026/IMG_3730.jpeg',
+  '/new_pics_02052026/IMG_3731.jpeg', '/new_pics_02052026/IMG_3734.jpeg',
+  '/new_pics_02052026/IMG_4567.jpeg', '/new_pics_02052026/IMG_4568.jpeg',
 ]
 
 export default function Home() {
@@ -16,10 +19,13 @@ export default function Home() {
       <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden">
         <HeroRotatingBackground />
         <div className="relative z-30 container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 pt-24 pb-16">
-          <div className="bg-white rounded-2xl shadow-xl px-8 py-8 md:px-10 md:py-10 shrink-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight text-center md:text-left">
-              Immanco Commercial Cleaning
-            </h1>
+          <div className="flex flex-col items-center md:items-start gap-4 shrink-0">
+            <Image src="/logo.png" alt="Immanco Cleaning Services" width={400} height={300} className="w-64 md:w-80 lg:w-96 h-auto" priority />
+            <div className="bg-white rounded-2xl shadow-xl px-8 py-8 md:px-10 md:py-10 w-full">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight text-center md:text-left">
+                Immanco Commercial Cleaning
+              </h1>
+            </div>
           </div>
           <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left max-w-xl">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-white/90 shadow-md px-6 py-5 mb-4 inline-block">
